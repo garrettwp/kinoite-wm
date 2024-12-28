@@ -19,13 +19,6 @@ modules:
 
   # Install repos
   - type: rpm-ostree
-    #repos:
-      # Sway Notification Center COPR Repo
-      #- https://copr.fedorainfracloud.org/coprs/erikreider/SwayNotificationCenter/repo/fedora-%OS_VERSION%/erikreider-SwayNotificationCenter-fedora-%OS_VERSION%.repo
-      # Niri COPR Repo
-      #- https://copr.fedorainfracloud.org/coprs/yalter/niri/repo/fedora-%OS_VERSION%/yalter-niri-fedora-%OS_VERSION%.repo
-      # hyprland copr repo
-      #- https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-%os_version%/solopasha-hyprland-fedora-%os_version%.repo
     install:
       # RPM Fusion
       - https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-%OS_VERSION%.noarch.rpm
@@ -48,11 +41,11 @@ modules:
       - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
 
   # Install RPM Fusion and replace mesa va packages
-  - type: rpm-ostree
-    install:
-      - mesa-va-drivers-freeworld
-    remove:
-      - mesa-va-drivers
+  #- type: rpm-ostree
+  #  install:
+  #    - mesa-va-drivers-freeworld
+  #  remove:
+  #    - mesa-va-drivers
 
   # Install general Window Manager Packages
   - type: rpm-ostree
