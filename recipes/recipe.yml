@@ -67,7 +67,7 @@ modules:
       - blueman
       - swww
       - wl-clipboard
-      - SwayNotificationCenter
+      #- SwayNotificationCenter
 
   # Install Niri Window Manager and associated packages
   - type: rpm-ostree
