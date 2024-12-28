@@ -57,7 +57,6 @@ modules:
       - playerctl
       - network-manager-applet
       - blueman
-      - swww
       - wl-clipboard
 
   # Install Sway Notification Manager
@@ -89,6 +88,7 @@ modules:
       - hypridle
       - hyprcursor
       - xdg-desktop-portal-hyprland
+      - swww
       - grim
       - slurp
 
