@@ -1,8 +1,6 @@
 # kinoite-wm &nbsp; [![bluebuild build badge](https://github.com/garrettwp/kinoite-wm/actions/workflows/build.yml/badge.svg)](https://github.com/garrettwp/kinoite-wm/actions/workflows/build.yml)
 
-See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
-
-After setup, it is recommended you update this README to describe your custom image.
+Personal build based on Kinoite which adds additional Window Managers like [Niri](https://github.com/YaLTeR/niri) and [Hyprland](https://github.com/hyprwm/Hyprland) with a sprinkle of additional features.
 
 ## Installation
 
