@@ -21,12 +21,11 @@ modules:
   - type: rpm-ostree
     repos:
       # Sway Notification Center COPR Repo
-      #- https://copr.fedorainfracloud.org/coprs/erikreider/SwayNotificationCenter/repo/fedora-%OS_VERSION%/erikreider-SwayNotificationCenter-fedora-%OS_VERSION%.repo
-      - https://copr.fedorainfracloud.org/coprs/erikreider/SwayNotificationCenter/repo/fedora-41/erikreider-SwayNotificationCenter-fedora-41.repo
+      - https://copr.fedorainfracloud.org/coprs/erikreider/SwayNotificationCenter/repo/fedora-%OS_VERSION%/erikreider-SwayNotificationCenter-fedora-%OS_VERSION%.repo
       # Niri COPR Repo
-      - https://copr.fedorainfracloud.org/coprs/yalter/niri/repo/fedora-%OS_VERSION%/yalter-niri-fedora-%OS_VERSION%.repo
-      # Hyprland COPR Repo
-      - https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-%OS_VERSION%/solopasha-hyprland-fedora-%OS_VERSION%.repo
+      #- https://copr.fedorainfracloud.org/coprs/yalter/niri/repo/fedora-%OS_VERSION%/yalter-niri-fedora-%OS_VERSION%.repo
+      # hyprland copr repo
+      #- https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-%os_version%/solopasha-hyprland-fedora-%os_version%.repo
     install:
       # RPM Fusion
       - https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-${OS_VERSION}.noarch.rpm
@@ -57,7 +56,7 @@ modules:
 
   # Install general Window Manager Packages
   - type: rpm-ostree
-    intsall:
+    install:
       - waybar
       - fuzzel
       - pavucontrol
@@ -67,10 +66,13 @@ modules:
       - blueman
       - swww
       - wl-clipboard
-      #- SwayNotificationCenter
+      - SwayNotificationCenter
 
   # Install Niri Window Manager and associated packages
   - type: rpm-ostree
+    repos:
+      # Niri COPR Repo
+      - https://copr.fedorainfracloud.org/coprs/yalter/niri/repo/fedora-%OS_VERSION%/yalter-niri-fedora-%OS_VERSION%.repo
     install:
       - niri
       - xdg-desktop-portal-gnome
@@ -78,6 +80,9 @@ modules:
 
   # Install Hyprland Window Manager and associated packages
   - type: rpm-ostree
+    repos:
+      # hyprland copr repo
+      - https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-%os_version%/solopasha-hyprland-fedora-%os_version%.repo
     install:
       - hyprland
       - hyprlock
