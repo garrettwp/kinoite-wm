@@ -16,6 +16,6 @@ modules:
       - JetBrainsMono
       - Noto
       - NerdFontsSymbolsOnly
-    google-fonts:
-      - Roboto
-      - Open Sans
+      google-fonts:
+        - Roboto
+        - Open Sans
