@@ -17,88 +17,14 @@ modules:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
-  # Install repos
-  - type: rpm-ostree
-    install:
-      # RPM Fusion
-      - https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-%OS_VERSION%.noarch.rpm
-      - https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-%OS_VERSION%.noarch.rpm
-
-  # Install repos and general packages
-  - type: rpm-ostree
-    install:
-      - zsh
-      - kitty
-      - gnome-keyring
-      - gnome-keyring-pam
-      - btop  
-      - distrobox
-      - neovim
-    remove:
-      # example: removing firefox (in favor of the flatpak)
-      # "firefox" is the main package, "firefox-langpacks" is a dependency
-      - firefox
-      - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
-
-  # Install RPM Fusion and replace mesa va packages
-  #- type: rpm-ostree
-  #  install:
-  #    - mesa-va-drivers-freeworld
-  #  remove:
-  #    - mesa-va-drivers
-
-  # Install general Window Manager Packages
-  - type: rpm-ostree
-    install:
-      - waybar
-      - fuzzel
-      - pavucontrol
-      - brightnessctl
-      - playerctl
-      - network-manager-applet
-      - blueman
-      - wl-clipboard
-
-  # Install Sway Notification Manager
-  - type: rpm-ostree
-    repos:
-      # Sway Notification Center COPR Repo
-      - https://copr.fedorainfracloud.org/coprs/erikreider/SwayNotificationCenter/repo/fedora-%OS_VERSION%/erikreider-SwayNotificationCenter-fedora-%OS_VERSION%.repo
-    install:
-      - SwayNotificationCenter
-
-  # Install Niri Window Manager and associated packages
-  - type: rpm-ostree
-    repos:
-      # Niri COPR Repo
-      - https://copr.fedorainfracloud.org/coprs/yalter/niri/repo/fedora-%OS_VERSION%/yalter-niri-fedora-%OS_VERSION%.repo
-    install:
-      - niri
-      - xdg-desktop-portal-gnome
-      - xdg-desktop-portal-gtk
-
-  # Install Hyprland Window Manager and associated packages
-  - type: rpm-ostree
-    repos:
-      # hyprland copr repo
-      - https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-%OS_VERSION%/solopasha-hyprland-fedora-%OS_VERSION%.repo
-    install:
-      - hyprland
-      - hyprlock
-      - hypridle
-      - hyprcursor
-      - xdg-desktop-portal-hyprland
-      - swww
-      - grim
-      - slurp
-
-  - type: default-flatpaks
-    notify: true # Send notification after install/uninstall is finished (true/false)
-    system:
-      # If no repo information is specified, Flathub will be used by default
-      install:
-        - org.mozilla.firefox
-    user: {} # Also add Flathub user repo, but no user packages
+  - from-file: general.yml
+  - from-file: fonts.yml
+  - from-file: virtualization.yml
+  - from-file: general-wm.yml
+  - from-file: swaync.yml
+  - from-file: niri.yml
+  - from-file: hyprland.yml
+  - from-file: flatpak.yml
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
