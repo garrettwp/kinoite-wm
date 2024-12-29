@@ -15,4 +15,5 @@ modules:
         - io.missioncenter.MissionCenter
         - org.gnome.seahorse.Application
         - io.github.celluloid_player.Celluloid
+        - org.localsend.localsend_app
     user: {} # Also add Flathub user repo, but no user packages
