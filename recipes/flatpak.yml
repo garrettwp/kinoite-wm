@@ -6,6 +6,11 @@ modules:
       # If no repo information is specified, Flathub will be used by default
       install:
         - org.mozilla.firefox
+        - org.kde.gwenview
+        - org.kde.kcalc
+        - org.kde.okular
+        - org.kde.skanpage
+        - org.kde.kolourpaint
         - com.brave.Browser
         - app.devsuite.Ptyxis
         - io.github.dvlv.boxbuddyrs
