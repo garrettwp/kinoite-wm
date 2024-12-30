@@ -21,4 +21,5 @@ modules:
         - org.gnome.seahorse.Application
         - io.github.celluloid_player.Celluloid
         - org.localsend.localsend_app
+        - org.remmina.Remmina
     user: {} # Also add Flathub user repo, but no user packages
