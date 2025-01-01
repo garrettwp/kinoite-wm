@@ -22,4 +22,5 @@ modules:
         - io.github.celluloid_player.Celluloid
         - org.localsend.localsend_app
         - org.remmina.Remmina
+        - com.github.wwmm.easyeffects
     user: {} # Also add Flathub user repo, but no user packages
