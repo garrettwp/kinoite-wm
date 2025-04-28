@@ -12,6 +12,7 @@ modules:
         - hyprlock
         - hypridle
         - hyprcursor
+        - hyprland-qtutils
         - xdg-desktop-portal-hyprland
         - swww
         - grim
