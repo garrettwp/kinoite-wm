@@ -1,13 +1,14 @@
 # Install Niri Window Manager
 modules:
   - type: dnf
+    repos:
+      # Niri COPR Repo
+      copr:
+        #- yalter/niri
+        - yalter/niri-git
     install:
       install-weak-deps: false
       packages:
-        # Niri COPR Repo
-        #- repo: copr:copr.fedorainfracloud.org/coprs/yalter/niri
-        - repo: copr:copr.fedorainfracloud.org/coprs/yalter/niri-git
-          packages:
-            - niri
-            - xdg-desktop-portal-gnome
-            - xdg-desktop-portal-gtk
+        - niri
+        - xdg-desktop-portal-gnome
+        - xdg-desktop-portal-gtk
