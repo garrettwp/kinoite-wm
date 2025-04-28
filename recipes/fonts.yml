@@ -1,8 +1,9 @@
 # Install fonts
 modules:
-  - type: rpm-ostree
+  - type: dnf
     install:
-      - fontawesome-6-free-fonts
+      packages:
+        - fontawesome-6-free-fonts
 
   - type: fonts
     fonts:

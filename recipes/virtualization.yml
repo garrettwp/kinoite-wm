@@ -1,15 +1,17 @@
 # Install Virtualization 
 modules:
-  - type: rpm-ostree
+  - type: dnf
     install:
-      - virt-install
-      - libvirt-daemon-config-network
-      - libvirt-daemon-kvm
-      - qemu-kvm
-      - virt-manager
-      - virt-viewer
-      - guestfs-tools
-      - virt-top
+      install-weak-deps: false
+      packages:
+        - virt-install
+        - libvirt-daemon-config-network
+        - libvirt-daemon-kvm
+        - qemu-kvm
+        - virt-manager
+        - virt-viewer
+        - guestfs-tools
+        - virt-top
   - type: systemd
     system:
       enabled:

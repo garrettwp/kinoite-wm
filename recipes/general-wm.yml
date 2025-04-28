@@ -1,12 +1,14 @@
 # Install general Window Manager packages
 modules:
-  - type: rpm-ostree
+  - type: dnf
     install:
-      - waybar
-      - fuzzel
-      - pavucontrol
-      - brightnessctl
-      - playerctl
-      - network-manager-applet
-      - blueman
-      - wl-clipboard
+      install-weak-deps: false
+      packages:
+        - waybar
+        - fuzzel
+        - pavucontrol
+        - brightnessctl
+        - playerctl
+        - network-manager-applet
+        - blueman
+        - wl-clipboard

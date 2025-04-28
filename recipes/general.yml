@@ -1,18 +1,21 @@
 # General system packages
 modules:
-  - type: rpm-ostree
+  - type: dnf
     install:
-      - zsh
-      - kitty
-      - gnome-keyring
-      - gnome-keyring-pam
-      - btop  
-      - distrobox
-      - neovim
-      - stow
-      - fzf
-      - zoxide
-      - bat
+      install-weak-deps: false
+      packages:
+        - zsh
+        - kitty
+        - gnome-keyring
+        - gnome-keyring-pam
+        - btop  
+        - distrobox
+        - neovim
+        - stow
+        - fzf
+        - zoxide
+        - bat
+  - type: rpm-ostree
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
