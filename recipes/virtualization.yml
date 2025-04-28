@@ -12,7 +12,7 @@ modules:
         - virt-viewer
         - guestfs-tools
         - virt-top
-  - type: systemd
-    system:
-      enabled:
-        - libvirtd.service
+  #- type: systemd
+  #  system:
+  #    enabled:
+  #      - libvirtd.service
