@@ -12,3 +12,4 @@ modules:
         - network-manager-applet
         - blueman
         - wl-clipboard
+        - rofi-wayland
