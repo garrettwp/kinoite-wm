@@ -10,11 +10,20 @@ modules:
         - gnome-keyring-pam
         - btop  
         - distrobox
-        - neovim
         - stow
         - fzf
         - zoxide
         - bat
+  # Neovim and some dependencies
+  - type: dnf
+    install:
+      install-weak-deps: false
+      packages:
+        - neovim
+        - gcc
+        - nodejs
+        - ripgrep
+        - tree-sitter-cli
   - type: rpm-ostree
     remove:
       # example: removing firefox (in favor of the flatpak)
