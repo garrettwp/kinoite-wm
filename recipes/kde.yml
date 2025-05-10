@@ -1,0 +1,7 @@
+# Install misc KDE packages
+modules:
+  - type: dnf
+    install:
+      install-weak-deps: false
+      packages:
+        - smb4k
