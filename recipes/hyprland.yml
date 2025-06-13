@@ -8,12 +8,12 @@ modules:
     install:
       install-weak-deps: false
       packages:
-        - hyprland
+        #- hyprland
         - hyprlock
         - hypridle
-        - hyprcursor
-        - hyprland-qtutils
-        - xdg-desktop-portal-hyprland
+        #- hyprcursor
+        #- hyprland-qtutils
+        #- xdg-desktop-portal-hyprland
         - swww
-        - grim
-        - slurp
+        #- grim
+        #- slurp
