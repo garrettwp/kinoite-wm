@@ -13,3 +13,4 @@ modules:
         - blueman
         - wl-clipboard
         - rofi-wayland
+        - xwayland-satellite
