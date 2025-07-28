@@ -1,35 +1,34 @@
 # Install flatpaks
 modules:
   - type: default-flatpaks
-  configurations:
-    - notify: false
-      scope: system
-      install:
-        - org.mozilla.firefox
-        - org.kde.gwenview
-        - org.kde.kcalc
-        - org.kde.okular
-        - org.kde.skanpage
-        - org.kde.kolourpaint
-        - app.devsuite.Ptyxis
-        - io.github.dvlv.boxbuddyrs
-        - com.github.tchx84.Flatseal
-        - io.github.flattool.Warehouse
-        - it.mijorus.gearlever
-        - io.missioncenter.MissionCenter
-        - org.gnome.seahorse.Application
-    # Install flatpaks for user
-    - notify: false
-      scope: user
-      install:
-        - app.zen_browser.zen
-        - io.github.celluloid_player.Celluloid
-        - org.localsend.localsend_app
-        - org.remmina.Remmina
-        - com.github.wwmm.easyeffects
-        - md.obsidian.Obsidian
-        - me.proton.Pass
-        - io.github.alainm23.planify
-        - com.github.zocker_160.SyncThingy
-        - org.signal.Signal
-        - com.visualstudio.code        
+    configurations:
+      - notify: false
+        scope: system
+        install:
+          - org.mozilla.firefox
+          - org.kde.gwenview
+          - org.kde.kcalc
+          - org.kde.okular
+          - org.kde.skanpage
+          - org.kde.kolourpaint
+          - app.devsuite.Ptyxis
+          - io.github.dvlv.boxbuddyrs
+          - com.github.tchx84.Flatseal
+          - io.github.flattool.Warehouse
+          - it.mijorus.gearlever
+          - io.missioncenter.MissionCenter
+          - org.gnome.seahorse.Application
+      - notify: false
+        scope: user
+        install:
+          - app.zen_browser.zen
+          - io.github.celluloid_player.Celluloid
+          - org.localsend.localsend_app
+          - org.remmina.Remmina
+          - com.github.wwmm.easyeffects
+          - md.obsidian.Obsidian
+          - me.proton.Pass
+          - io.github.alainm23.planify
+          - com.github.zocker_160.SyncThingy
+          - org.signal.Signal
+          - com.visualstudio.code
