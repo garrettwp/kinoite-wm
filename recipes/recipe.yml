@@ -27,6 +27,7 @@ modules:
   - from-file: kde.yml
   - from-file: flatpak.yml
   - from-file: netbird.yml
+  - from-file: tailscale.yml
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
