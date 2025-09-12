@@ -1,4 +1,10 @@
 type: dnf
+repos:
+  files:
+    - tailscale.repo
 install:
   packages:
-    - tailscale
+    - repo: tailscale
+      packages:
+        - tailscale
+#    - tailscale
