@@ -4,8 +4,8 @@ modules:
     repos:
       # Niri COPR Repo
       copr:
-        #- yalter/niri
-        - yalter/niri-git
+        - yalter/niri
+        #- yalter/niri-git
     install:
       install-weak-deps: false
       packages:
