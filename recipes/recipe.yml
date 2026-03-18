@@ -21,9 +21,9 @@ modules:
   - from-file: fonts.yml
   - from-file: virtualization.yml
   - from-file: general-wm.yml
-  - from-file: swaync.yml
+  #- from-file: swaync.yml
   - from-file: niri.yml
-  - from-file: hyprland.yml
+  #- from-file: hyprland.yml
   - from-file: kde.yml
   - from-file: flatpak.yml
   - from-file: tailscale.yml

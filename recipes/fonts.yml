@@ -4,7 +4,6 @@ modules:
     install:
       packages:
         - fontawesome-6-free-fonts
-        - dejavu-sans-fonts
 
   - type: fonts
     fonts:

@@ -1,11 +1,14 @@
-type: dnf
-repos:
-  files:
-    - terra.repo
-install:
-  skip-unavailable: true
-  packages:
-    - repo: terra
+modules:
+  - type: dnf
+    repos:
+      files:
+        - terra.repo
+
+    install:
+      skip-unavailable: true
       packages:
-        - noctalia-shell
-    - jemalloc 
+        - repo: terra
+          packages:
+            - noctalia-shell
+        - dejavu-sans-fonts
+        - jemalloc 
