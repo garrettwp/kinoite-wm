@@ -1,0 +1,9 @@
+type: dnf
+repos:
+  files:
+    - terra.repo
+install:
+  packages:
+    - repo: terra
+      packages:
+        - noctalia-shell

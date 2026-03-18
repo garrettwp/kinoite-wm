@@ -26,8 +26,8 @@ modules:
   - from-file: hyprland.yml
   - from-file: kde.yml
   - from-file: flatpak.yml
-  #- from-file: netbird.yml
   - from-file: tailscale.yml
+  - from-file: noctalia.yml
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 

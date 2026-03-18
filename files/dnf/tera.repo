@@ -1,0 +1,8 @@
+[terra]
+name=Terra
+baseurl=https://repos.fyralabs.com/terra43
+enabled=1
+type=rpm
+repo_gpgcheck=1
+gpgcheck=1
+gpgkey=https://repos.fyralabs.com/terra43/key.asc
