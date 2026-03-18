@@ -1,0 +1,10 @@
+# Install DankMaterialShell
+modules:
+  - type: dnf
+    repos:
+      copr:
+        - avengemedia/dms
+    install:
+      install-weak-deps: true
+      packages:
+        - dms
