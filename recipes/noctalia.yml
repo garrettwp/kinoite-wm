@@ -3,7 +3,9 @@ repos:
   files:
     - terra.repo
 install:
+  skip-unavailable: true
   packages:
     - repo: terra
       packages:
         - noctalia-shell
+    - jemalloc 
