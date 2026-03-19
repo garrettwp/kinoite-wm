@@ -6,6 +6,7 @@ modules:
       packages:
         #- waybar
         #- fuzzel
+        - swayidle
         - pavucontrol
         - brightnessctl
         - playerctl
