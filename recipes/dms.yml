@@ -8,3 +8,9 @@ modules:
       install-weak-deps: true
       packages:
         - dms
+        #- matugen
+        #- cava
+        #- qt6ct
+        #- qt6-qtmultimedia
+        #- cliphist
+
