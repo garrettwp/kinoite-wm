@@ -12,5 +12,5 @@ modules:
         #- cava
         #- qt6ct
         #- qt6-qtmultimedia
-        #- cliphist
+        - cliphist
 
