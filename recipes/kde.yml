@@ -5,4 +5,3 @@ modules:
       install-weak-deps: false
       packages:
         - smb4k
-        - qt6ct-kde
