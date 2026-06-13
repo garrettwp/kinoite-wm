@@ -7,16 +7,18 @@ modules:
     install:
       install-weak-deps: true
       packages:
+        - cava
+        #- qt6ct
+        - qt6-qtmultimedia
+        - repo: coprdep:copr.fedorainfracloud.org:avengemedia:danklinux
+          packages:
+            - danksearch
+            - cliphist
+            - matugen
+            - dgop
+            - quickshell
+            - qt6ct-kde
         - repo: copr:copr.fedorainfracloud.org:avengemedia:dms
           packages:
             - dms
-            - quickshell
-            - matugen
-            - cava
-            #- qt6ct
-            - qt6ct-kde
-            - qt6-qtmultimedia
-            - cliphist
-            - dsearch
-            - dgop
 
