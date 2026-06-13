@@ -5,11 +5,12 @@ modules:
       copr:
         - lionheartp/Hyprland
     install:
-      - repo: copr:copr.fedorainfracloud.org:lionheartp:Hyprland
-        install-weak-deps: true
-        exclude:
-          - cliphist
-          - quickshell
-        packages:
-          - noctalia-git
+      install-weak-deps: true
+      packages:
+        - repo: copr:copr.fedorainfracloud.org:lionheartp:Hyprland
+          packages:
+            - noctalia-git
+      exclude:
+        - cliphist
+        - quickshell
 

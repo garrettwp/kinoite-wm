@@ -5,17 +5,18 @@ modules:
       copr:
         - avengemedia/dms
     install:
-      - repo: copr:copr.fedorainfracloud.org:avengemedia:dms
-        install-weak-deps: true
-        packages:
-          - dms
-          - quickshell
-          - matugen
-          - cava
-          #- qt6ct
-          - qt6ct-kde
-          - qt6-qtmultimedia
-          - cliphist
-          - dsearch
-          - dgop
+      install-weak-deps: true
+      packages:
+        - repo: copr:copr.fedorainfracloud.org:avengemedia:dms
+          packages:
+            - dms
+            - quickshell
+            - matugen
+            - cava
+            #- qt6ct
+            - qt6ct-kde
+            - qt6-qtmultimedia
+            - cliphist
+            - dsearch
+            - dgop
 
