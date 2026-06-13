@@ -6,16 +6,16 @@ modules:
         - avengemedia/dms
     install:
       - from-repo: avengemedia/dms
-      install-weak-deps: true
-      packages:
-        - dms
-        - quickshell
-        - matugen
-        - cava
-        #- qt6ct
-        - qt6ct-kde
-        - qt6-qtmultimedia
-        - cliphist
-        - dsearch
-        - dgop
+        install-weak-deps: true
+        packages:
+          - dms
+          - quickshell
+          - matugen
+          - cava
+          #- qt6ct
+          - qt6ct-kde
+          - qt6-qtmultimedia
+          - cliphist
+          - dsearch
+          - dgop
 
