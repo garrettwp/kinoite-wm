@@ -10,7 +10,7 @@ modules:
         - cava
         #- qt6ct
         - qt6-qtmultimedia
-        - repo: coprdep:copr.fedorainfracloud.org:avengemedia:danklinux
+        - from-repo: coprdep:copr.fedorainfracloud.org:avengemedia:danklinux
           packages:
             - danksearch
             - cliphist
@@ -18,7 +18,7 @@ modules:
             - dgop
             - quickshell
             - qt6ct-kde
-        - repo: copr:copr.fedorainfracloud.org:avengemedia:dms
+        - from-repo: copr:copr.fedorainfracloud.org:avengemedia:dms
           packages:
             - dms
 
