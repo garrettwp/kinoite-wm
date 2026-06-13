@@ -5,11 +5,10 @@ modules:
       copr:
         - lionheartp/Hyprland
     install:
-      - from-repo: lionheartp/Hyprland
-        install-weak-deps: true
-        exclude:
-          - cliphist
-          - quickshell
-        packages:
-          - noctalia-git
+      install-weak-deps: true
+      exclude:
+        - cliphist
+        - quickshell
+      packages:
+        - noctalia-git
 
