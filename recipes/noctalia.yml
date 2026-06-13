@@ -6,6 +6,9 @@ modules:
         - lionheartp/Hyprland
     install:
       install-weak-deps: true
+      exclude
+        - cliphist
+        - quickshell
       packages:
         - noctalia-git
 
