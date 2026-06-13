@@ -1,14 +1,11 @@
+# Install Noctalia v5
 modules:
   - type: dnf
     repos:
-      files:
-        - terra.repo
-
+      copr:
+        - lionheartp/Hyprland
     install:
-      skip-unavailable: true
+      install-weak-deps: true
       packages:
-        - repo: terra
-          packages:
-            - noctalia-shell
-        - dejavu-sans-fonts
-        - jemalloc 
+        - noctalia-git
+
