@@ -5,9 +5,11 @@ modules:
       copr:
         - avengemedia/dms
     install:
+      - from-repo: avengemedia/dms
       install-weak-deps: true
       packages:
         - dms
+        - quickshell
         - matugen
         - cava
         #- qt6ct
