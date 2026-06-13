@@ -7,10 +7,5 @@ modules:
     install:
       install-weak-deps: true
       packages:
-        - from-repo: copr:copr.fedorainfracloud.org:lionheartp:Hyprland
-          packages:
-            - noctalia-git
-      exclude:
-        - cliphist
-        - quickshell
+        - noctalia-git
 
