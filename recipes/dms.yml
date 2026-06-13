@@ -6,16 +6,14 @@ modules:
         - avengemedia/dms
     install:
       install-weak-deps: true
-      disablerepo: copr:copr.fedorainfracloud.org:lionheartp:Hyprland
       packages:
         - cava
-        #- qt6ct
+        - qt6ct-kde
         - qt6-qtmultimedia
         - danksearch
         - cliphist
         - matugen
         - dgop
         - quickshell
-        - qt6ct-kde
         - dms
 
