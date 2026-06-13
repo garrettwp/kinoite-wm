@@ -15,6 +15,7 @@ modules:
         - fzf
         - zoxide
         - bat
+        - input-remapper
   # Neovim and some dependencies
   - type: dnf
     install:
