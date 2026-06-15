@@ -3,7 +3,7 @@ modules:
   - type: dnf
     repos:
       copr:
-        - avengemedia/dms
+        - avengemedia/dms-git
     install:
       install-weak-deps: true
       packages:
@@ -14,6 +14,6 @@ modules:
         - cliphist
         - matugen
         - dgop
-        - quickshell
+        - quickshell-git
         - dms
 
