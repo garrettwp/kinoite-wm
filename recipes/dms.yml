@@ -3,7 +3,7 @@ modules:
   - type: dnf
     repos:
       copr:
-        - avengemedia/dms-git
+        - duxlabs/dms-git
     install:
       install-weak-deps: true
       packages:
