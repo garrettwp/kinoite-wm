@@ -1,13 +1,13 @@
-type: dnf
-repos:
-  files:
-    - netbird.repo
-install:
-  packages:
-    - repo: netbird
-      packages:
-        - netbird
-        - netbird-ui
-        - gtk4
-        - webkitgtk6.0
-        - xdg-utils
+modules:
+  - type: dnf
+    repos:
+      files:
+        - netbird.repo
+
+  - type: script
+    snippets:
+      # Now install the latest netbird and netbird-ui cleanly
+      - dnf5 install -y --setopt=tsflags=noscripts netbird
+      - dnf5 install -y gtk4 webkitgtk6.0 xdg-utils netbird-ui
+      - netbird service install || true
+      - systemctl enable netbird.service
