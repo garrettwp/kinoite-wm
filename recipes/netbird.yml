@@ -8,3 +8,6 @@ install:
       packages:
         - netbird
         - netbird-ui
+        - gtk4
+        - webkitgtk6.0
+        - xdg-utils
