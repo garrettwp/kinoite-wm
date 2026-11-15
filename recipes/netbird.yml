@@ -1,6 +1,10 @@
-modules:
-  - type: dnf
-    install:
+type: dnf
+repos:
+  files:
+    - netbird.repo
+install:
+  packages:
+    - repo: netbird
       packages:
         - netbird
         - netbird-ui
